@@ -1,0 +1,40 @@
+# Script Name		: PetShop.py
+# Author			: Jean Carlos Curti
+# Created			: 28th Juny 2016
+# Last Modified		: 29th Juny 2016
+# Version			: 1.0
+# Modifications		: none
+# Description		: Programa em desenvolvimento para estudo de um estudante do curso de Análise e Desenvolvimento de Sisitemas
+import os
+import datetime
+import sqlite3
+import tkinter
+
+from tkinter import *
+from sqlite3 import 
+
+# conectando...
+conn = sqlite3.connect('clientes.db')
+
+# definindo um cursor
+cursor = conn.cursor()
+
+# criando a tabela (schema)
+cursor.execute("""
+CREATE TABLE clientes (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome TEXT NOT NULL,
+	idade INTEGER,
+	cpf	VARCHAR(11) NOT NULL,
+	email TEXT NOT NULL,
+	fone TEXT,
+	cidade TEXT,
+	bairro TEXT,
+	cep INTEGER,
+	uf VARCHAR(2) NOT NULL,
+	criado_em DATE NOT NULL
+);
+""")
+
+# desconectando...
+conn.close()
