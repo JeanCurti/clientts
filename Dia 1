@@ -1,8 +1,8 @@
 # Script Name		: PetShop.py
-# Author			: Jean Carlos Curti
-# Created			: 28th Juny 2016
+# Author		: Jean Carlos Curti
+# Created		: 28th Juny 2016
 # Last Modified		: 29th Juny 2016
-# Version			: 1.0
+# Version		: 1.0
 # Modifications		: none
 # Description		: Programa em desenvolvimento para estudo de um estudante do curso de Análise e Desenvolvimento de Sisitemas
 import os
